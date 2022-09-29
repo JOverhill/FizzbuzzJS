@@ -5,7 +5,11 @@
 /* This method saves everything in a single array. Alternative method / if user wants to print each index of fizzbuzz on separate line would be to replace each results.push with console.log*/
  function fizzBuzz(n) {
     var n = prompt("Give num");
-    
+    if (isNaN(n)){
+        window.alert("Not a number, try again");
+        return 0;
+    }
+
     var results = [];
     
     for (i = 1; i <= n; i++) {
